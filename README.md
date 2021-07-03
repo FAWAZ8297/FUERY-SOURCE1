@@ -1,4 +1,4 @@
-# <p align="center" style="color:#cb3349" > [<< FUERY >> (Final Version)](https://telegram.me/AFCHAT1)
+# <p align="center" style="color:#cb3349" > [ FUERY 𓅓](https://telegram.me/AFCHAT1)
 
  <p align="center" style="color: #14635c;" > بوت الزعيم الاقوى والاحدث لحمايه المجموعات في التلكرام
 
