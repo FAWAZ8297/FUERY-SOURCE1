@@ -1,1 +1,1 @@
-git clone https://github.com/FUERY SOURCE/FUERY SOURCE ؛ cd FUERY SOURCE؛ chmod + x FUERY SOURCE؛ ./FUERY SOURCE
+git clone https://github.com/FAWAZ8297/AFSTORE1 ؛ cd AFSTORE1؛ chmod + x AFSTORE1؛ ./AFSTORE1
