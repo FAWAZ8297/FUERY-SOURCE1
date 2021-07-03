@@ -1,14 +1,14 @@
-http = require("socket.http")
-https = require("ssl.https")
-JSON = dofile("./lib/dkjson.lua")
-json = dofile("./lib/JSON.lua")
-URL = dofile("./lib/url.lua")
-serpent = dofile("./lib/serpent.lua")
-redis = dofile("./lib/redis.lua").connect("127.0.0.1", 6379)
+http = dofile("socket.http")
+https = dofile("ssl.https")
+JSON = dofile("dkjson.lua")
+json = dofile("JSON.lua")
+URL = dofile("url.lua")
+serpent = dofile("serpent.lua")
+redis = dofile("redis.lua").connect("127.0.0.1", 6379)
 Server_Devid = io.popen("echo $SSH_CLIENT  awk '{ print $1}'"):read('*a')
 ------------------------------------------------------------------------------------------------------------
 local function Load_File()
-local f = io.open("./Ammar.lua", "r")  
+local f = io.open("./AFSTORE1.lua", "r")  
 if not f then   
 if not redis:get(Server_Devid.."Token_Devbot") then
 io.write('\n\27[1;35mSend Token For Bot : ارسل توكن البوت ...\n\27[0;39;49m')
