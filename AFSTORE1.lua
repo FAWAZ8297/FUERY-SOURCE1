@@ -26,7 +26,7 @@ end
 else
 io.write('\n\27[1;31mToken was not saved \n لم يتم حفظ التوكن \n\27[0;39;49m')
 end 
-os.execute('lua FAWAZ.lua')
+os.execute('lua AFSTORE1.lua')
 end
 ------------------------------------------------------------------------------------------------------------
 if not redis:get(Server_Devid.."User_Devbots1") then
@@ -49,7 +49,7 @@ redis:set(Server_Devid.."Id_Devbotsid",deviduser)
 else
 io.write('\n\27[1;31mThe UserName was not Saved : لم يتم حفظ معرف المطور الاساسي\n\27[0;39;49m')
 end 
-os.execute('lua FAWAZ.lua')
+os.execute('lua AFSTORE1.lua')
 end
 
 ------------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ cd $HOME/]]..redis:get(Server_Devid.."Token_Devbotuser")..[[
 token="]]..redis:get(Server_Devid.."Token_Devbot")..[["
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./FAWAZ.lua -p PROFILE --bot=$token
+./tg -s ./AFSTORE1.lua -p PROFILE --bot=$token
 done
 ]])
 Run_File_NightRang:close()
@@ -2540,7 +2540,7 @@ Send_Optionspv(Id_Dev,msg.id_,UserForward,"reply_Pv","❦ تم ارسال رسا
 end,nil)end,nil)
 end
 if text == "تحديث" then
-dofile("FAWAZ.lua")  
+dofile("AFSTORE1.lua")  
 dofile("Ammar.lua") 
 send(msg.chat_id_, msg.id_, "تم تحديث ملفات البوت")
 end
@@ -2776,10 +2776,10 @@ redis:sadd(bot_id.."makal:bots", text)
 return false end
 end
 if text == 'تحديث السورس' and Dev_Bots(msg) then 
-os.execute('rm -rf FAWAZ.lua')
-os.execute('wget https://raw.githubusercontent.com/iventa200/ivnta/master/FAWAZ.lua')
+os.execute('rm -rf AFSTORE1.lua')
+os.execute('wget https://raw.githubusercontent.com/iventa200/ivnta/master/AFSTORE1.lua')
 send(msg.chat_id_, msg.id_,'❦ تم تحديث السورس')
-dofile('FAWAZ.lua')  
+dofile('AFSTORE1.lua')  
 end
 
 if text == 'تغير كليشه start' then
@@ -3043,7 +3043,7 @@ if not Dev_Bots(msg) then
 send(msg.chat_id_,msg.id_,' هذا الامر خاص المطور الاساسي فقط')
 return false
 end
-dofile("FAWAZ.lua")  
+dofile("AFSTORE1.lua")  
 dofile("Ammar.lua") 
 send(msg.chat_id_, msg.id_, "تم تحديث ملفات البوت")
 end
@@ -4415,10 +4415,10 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = text:match("^تنزيل مميز @(.*)$") }, FunctionStatus, nil)
 end
 if text == 'تحديث السورس' and Dev_Bots(msg) then 
-os.execute('rm -rf FAWAZ.lua')
-os.execute('wget https://raw.githubusercontent.com/iventa200/ivnta/master/FAWAZ.lua')
+os.execute('rm -rf AFSTORE1.lua')
+os.execute('wget https://raw.githubusercontent.com/iventa200/ivnta/master/AFSTORE1.lua')
 send(msg.chat_id_, msg.id_,'❦ تم تحديث السورس')
-dofile('FAWAZ.lua')  
+dofile('AFSTORE1.lua')  
 end
 if text == ("قائمه العام") and DeveloperBot1(msg) or text == ("المحظورين عام") and DeveloperBot1(msg) then
 local list = redis:smembers(bot_id.."NightRang:Removal:User:Groups")
@@ -8091,7 +8091,7 @@ end
 return false  
 end
 if text == "اعاده التشغيل" or text == "اعاده تشغيل" or text == "restart" then
-dofile("FAWAZ.lua")  
+dofile("AFSTORE1.lua")  
 dofile("Ammar.lua") 
 send(msg.chat_id_, msg.id_, "تم اعاده تشغيل بوت و تحسينه")
 end
