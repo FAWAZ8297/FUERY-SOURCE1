@@ -1,22 +1,3 @@
-Skip to content
-FAWAZ8297
-/
-AFSTORE1
-forked from NightRang/NightRang
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-NightRang/NightRang
-@NightRang
-NightRang NightRang V2
-…
- 1 contributor
-80 lines (41 sloc)  1.34 KB
 THIS_DIR=$(cd $(dirname $0); pwd)
 
 cd $THIS_DIR
@@ -97,16 +78,3 @@ fi
 
 lua AFSTORE1.lua
 fi
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
