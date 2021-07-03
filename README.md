@@ -1,4 +1,4 @@
-# <p align="center" style="color:red" >[ FUERY 𓅓](https://telegram.me/AFCHAT1)
+# <p align="center" style="color:black" >[ FUERY 𓅓](https://telegram.me/AFCHAT1)
 # <p align="center" style="color:black">سورس الحمايه الاول و الاقوى في التيليقرام
 
 # <p align="center" style="color: #14635c;" > التنصيب بكود واحد
